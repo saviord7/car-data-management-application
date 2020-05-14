@@ -1,0 +1,5 @@
+{
+  "jwtSecret": "01af7d36c2832908fd4c92661f041af2",
+  "mongoUri": "mongodb+srv://car-data-management:car-data-management@cluster0-hjtwi.azure.mongodb.net/car-data-management?retryWrites=true&w=majority"
+}
+
