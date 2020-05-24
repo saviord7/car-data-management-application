@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 export const DataList = ({ratingData, dataList}) => {
 
@@ -6,6 +7,7 @@ export const DataList = ({ratingData, dataList}) => {
       <div>
         <p style={{
           fontWeight: '4px'
+
         }}>Trip Rating: {ratingData !== 0 ? 'Dangerous Driving Style' : 'Safe Driving Style'}</p>
 
         <table style={{
@@ -47,6 +49,7 @@ export const DataList = ({ratingData, dataList}) => {
           })}
           </tbody>
         </table>
+          <Link to={`/trip/list/`}>Go back to Trip List</Link>
       </div>
   );
 };

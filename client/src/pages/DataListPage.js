@@ -43,6 +43,7 @@ export const DataListPage = () => {
       setRatingData(ratingData['prediction']
           .sort((a, b) => {
             return ratingData['prediction'].filter(v => v === a)['length'] - ratingData['prediction'].filter(v => v === b)['length'];
+
           })
           .pop());
     } catch (e) {}

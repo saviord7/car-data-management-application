@@ -33,9 +33,11 @@ router.post('/create', auth, async(req, res) => {
 });
 
 router.post('/list', auth, async(request, response) => {
+  let newVar = request.body ? {userId: request.body.userId} : {};
+  console.log("bla bla", newVar);
   Trip
       .find(
-          request.body ? {owner: request.body.owner} : {}
+          request.body ? {userId: request.body.userId} : {}
       )
       .then((v) => {
         response.json(v);

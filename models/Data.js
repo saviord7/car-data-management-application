@@ -44,6 +44,10 @@ const schema = new Schema({
   owner: {
     type: Types.ObjectId,
     ref: 'Trip'
+  },
+  userId:{
+    type: Types.ObjectId,
+    ref: 'User'
   }
 });
 
