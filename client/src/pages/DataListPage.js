@@ -31,9 +31,11 @@ export const DataListPage = () => {
                   return [
                     data.accuracy,
                     data.bearing,
+                    data.acceleration_x,
                     data.acceleration_y,
                     data.acceleration_z,
                     data.gyro_x,
+                    data.gyro_y,
                     data.second,
                     data.speed
                   ];

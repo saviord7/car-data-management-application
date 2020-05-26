@@ -27,7 +27,7 @@ const PORT = 5001;
 async function start() {
   try {
     ibmiotf.connect();
-
+    console.log('Connected to IBM IoT');
     await mongoose.connect(config.get('mongoUri'), {
       useNewUrlParser: true,
       useUnifiedTopology: true,
